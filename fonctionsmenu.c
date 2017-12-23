@@ -21,7 +21,7 @@ int choiceMainMenu(joueur rep[], int id) {
         ch1=printMainMenu();
         switch(ch1) {
             case 1:
-                printGameMenu();
+                choiceGameMenu(rep, id);
                 break;
             
             case 2:
@@ -38,8 +38,6 @@ int choiceMainMenu(joueur rep[], int id) {
                 
             default:
                 printf("\nVeuillez selectionner l'une des options\n");
-                while (enter != '\r' && enter != '\n') { enter = getchar(); }
-                enter=0;
                 break;
         }
     }
@@ -75,18 +73,20 @@ int choiceGameMenu(joueur rep[], int id) {
                 break;
                 
             case 4:
-                //liardice
+                liarDice(rep);
                 break;
                 
             case 5:
+                printf("\nRetour au menu principal...");
                 break;
                 
             default:
                 printf("\nVeuillez selectionner l'une des options\n");
-                while (enter != '\r' && enter != '\n') { enter = getchar(); }
-                enter=0;
                 break;
         }
+        fflush(stdin);
+        while (enter != '\r' && enter != '\n') { enter = getchar(); }
+        enter=0;
     }
     while(ch2 != 5);
     return id;
