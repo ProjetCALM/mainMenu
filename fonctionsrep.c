@@ -33,6 +33,7 @@ int gestionRep(joueur rep[], int id) {
                 break;
                 
             case 5:
+                printf("\nRetour au menu principal...");
                 break;
                 
             default:
@@ -64,13 +65,13 @@ void initRep(joueur rep[]) {
     
     /*char temp1[NOM]="Testeur";  //ce sont des profils tests pour eviter de devoir en creer a chaque fois
     char temp2[NOM]="Cobaye";
-    char temp3[NOM]="Manquedinspiration";
-    strcpy(rep[1].nom, temp1);
-    rep[1].score=254;
-    strcpy(rep[2].nom, temp2);
-    rep[2].score=6845;
-    strcpy(rep[3].nom, temp3);
-    rep[3].score=13;*/
+    char temp3[NOM]="Thing";
+    strcpy(rep[0].nom, temp1);
+    rep[0].score=254;
+    strcpy(rep[1].nom, temp2);
+    rep[1].score=6845;
+    strcpy(rep[2].nom, temp3);
+    rep[2].score=13;*/
 }
 
 void addJoueur(joueur rep[], int id) {
@@ -121,7 +122,7 @@ void printRep(joueur rep[], int id) {
     int i=0;
     if(id == 0)
     {
-        printf("Repertoire vide.\n");
+        printf("\nRepertoire vide.\n");
     }
     else 
     {
