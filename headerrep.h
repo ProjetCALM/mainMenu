@@ -15,6 +15,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 #define NOM ((int)100) //taille max du nom de joueur
 #define REP ((int)50) //taille max du répertoire de joueurs
 
